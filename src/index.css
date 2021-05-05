@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
 }
 
 header {
@@ -49,6 +50,8 @@ p {
 
 img {
     border-radius: 12px;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -71,9 +74,9 @@ footer a {
 
 .container {
     max-width: 968px;
-    width: 100%;
     margin: 0 auto;
 }
+
 
 .photo-perfil {
     border-radius: 16px;
@@ -98,4 +101,107 @@ footer a {
     border-radius: 12px;
     padding: 14px 15px 17px 15px;
     width: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "a b b"
+    "c c d"
+    "e f d"
+    ;
+    gap: 36px;
+}
+
+.photo1 {
+    grid-area: a;
+}
+
+.photo2 {
+    grid-area: b;
+}
+
+.photo3 {
+    grid-area: c;
+}
+
+.photo4 {
+    grid-area: d;
+}
+
+.photo5 {
+    grid-area: e;
+}
+
+.photo6 {
+    grid-area: f;
+}
+
+.grid-container img {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+@media only screen and (max-width: 968px) {
+    .container {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .grid-container {
+        gap: 13px;
+    }
+
+    header {
+        padding-top: 30px;
+    }
+
+    footer {
+        padding-top: 44px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .photo-perfil {
+        margin-bottom: 11px;
+        width: 102px;
+        height: 102px;
+    }
+
+    h1 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
+    }
+
+    h2 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    h3 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .info {
+        max-width: 258px;
+        margin-top: 12px;
+        margin-bottom: 39px;
+    }
+
+    .info p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .info-card {
+        padding: 0px;
+        width: 78px;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
