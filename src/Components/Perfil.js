@@ -1,10 +1,13 @@
 import React from 'react';
+import PhotoPefil from "../Images/profilePhoto.png"
 
 const Perfil = () => {
     return(
-        <div>
-            Perfil
-        </div>
+        <header>
+            <img className="photo-perfil" src={PhotoPefil} alt="Profile Photo" />
+            <h1>Rodney Cotton</h1>
+            <h2>Helsinki, Finland</h2>
+        </header>
     )
 }
 
