@@ -9,12 +9,12 @@ import Photo6 from '../Images/photo6.png';
 const Gallery = () => {
     return (
         <div className="grid-container">
-            <img className="photo1" src={Photo1} alt="First Photo" />
-            <img className="photo2" src={Photo2} alt="Second Photo" />
-            <img className="photo3" src={Photo3} alt="First Photo" />
-            <img className="photo4" src={Photo4} alt="First Photo" />
-            <img className="photo5" src={Photo5} alt="First Photo" />
-            <img className="photo6" src={Photo6} alt="First Photo" />
+            <img className="photo1" src={Photo1} alt="A coffe table" />
+            <img className="photo2" src={Photo2} alt="A sofa" />
+            <img className="photo3" src={Photo3} alt="A bathtub" />
+            <img className="photo4" src={Photo4} alt="A lamp" />
+            <img className="photo5" src={Photo5} alt="A plant" />
+            <img className="photo6" src={Photo6} alt="A table" />
         </div>
     )
 }
